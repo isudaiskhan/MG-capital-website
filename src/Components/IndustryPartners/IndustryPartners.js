@@ -84,7 +84,6 @@ const IndustryPartners = () => {
                 transition={{ duration: 0.5 }}
             >
                 <div className="flex flex-col">
-                    {/* Image */}
                     <div className="relative">
                         <img src={images[categoryIndex]} alt={categories[categoryIndex]} className="w-full h-full object-cover" />
                     </div>
