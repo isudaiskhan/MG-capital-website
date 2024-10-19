@@ -104,9 +104,7 @@ const IndustryPartners = () => {
                 </div>
             </motion.div>
 
-            {/* Desktop view: buttons on left, */}
             <div className="hidden md:grid grid-cols-1 md:grid-cols-4 lg:gap-16 gap-4 h-full">
-                {/* Left-side buttons */}
                 <div className="col-span-1 h-full flex">
                     <div className="flex flex-col gap-y-4 w-full justify-between">
                         {categories.map((cat, index) => (
