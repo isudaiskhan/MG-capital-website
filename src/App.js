@@ -6,6 +6,7 @@ import HigherStandards from "./Components/HigherStandards/HigherStandards";
 import IndustryPartners from "./Components/IndustryPartners/IndustryPartners";
 import MakePlaces from "./Components/MakePlaces/MakePlaces";
 import Navbar from "./Components/Navbar/Navbar";
+import ScrollButton from "./Components/ScollButton/ScrollButton";
 import Services from "./Components/Services/Services";
 import Testimonial from "./Components/Testimonial/Testimonial";
 
@@ -22,6 +23,7 @@ function App() {
       <MakePlaces />
       <Testimonial />
       <Footer />
+      <ScrollButton />
     </>
   );
 }

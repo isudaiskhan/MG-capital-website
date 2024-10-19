@@ -23,10 +23,11 @@ const Navbar = () => {
     }, []);
 
     const navItems = [
-        { id: 'about', label: 'About', link: '/about' },
-        { id: 'services', label: 'Services', link: '/services' },
-        { id: 'industries', label: 'Industries', link: '/industries' },
-        { id: 'peoples', label: 'Peoples', link: '/peoples' }
+        { id: 'about', label: 'About us', },
+        { id: 'services', label: 'Services', },
+        { id: 'sustainibility', label: 'Sustainibility', },
+        { id: 'industries', label: 'Industries', },
+        { id: 'peoples', label: 'Peoples', }
     ];
 
     const toggleMobileMenu = () => {
@@ -49,14 +50,17 @@ const Navbar = () => {
                         <div>
                             <img src={logo} />
                         </div>
-                        <div className="hidden lg:flex items-center space-x-10 ml-auto">
+                        <div className="hidden lg:flex items-center lg:space-x-3 xl:space-x-10 ml-auto">
                             <ul className="flex items-center">
                                 {navItems.map((item) => (
-                                    <li key={item.id} className="relative px-8 group cursor-pointer">
+                                    <li key={item.id} className="relative xl:px-8 px-5 group cursor-pointer">
                                         <button
                                             onClick={() => {
                                                 setActiveMenuItem(item.label);
-                                                // Navigate to item.link
+                                                const section = document.getElementById(item.id);
+                                                if (section) {
+                                                    section.scrollIntoView({ behavior: 'smooth' });
+                                                }
                                             }}
                                             className={`text-[#222222] font-family duration-300 group font-semibold group-hover:text-[#009444] ${activeMenuItem === item.label ? 'text-[#009444]' : ''}`}
                                         >
@@ -90,31 +94,27 @@ const Navbar = () => {
                             <AiOutlineClose className="text-4xl text-black" />
                         </button>
                         <ul className="mt-8 flex flex-col space-y-4">
-                            {navItems.map((item) => (
-                                <li key={item.id} className="relative p-3 select-none group cursor-pointer">
-                                    {!item.submenu ? (
+                            <div onClick={closeMobileMenu}>
+                                {navItems.map((item) => (
+                                    <li key={item.id} className="relative p-5 group cursor-pointer">
                                         <button
                                             onClick={() => {
                                                 setActiveMenuItem(item.label);
-                                                // Navigate to item.link
+                                                const section = document.getElementById(item.id);
+                                                if (section) {
+                                                    section.scrollIntoView({ behavior: 'smooth' });
+                                                }
                                             }}
-                                            className={`text-[#222222] duration-300 font-semibold hover:text-[#009444] ${activeMenuItem === item.label ? 'text-[#FEA116]' : ''}`}
+                                            className={`text-[#222222] duration-300 font-semibold hover:text-[#009444] ${activeMenuItem === item.label ? 'text-[#009445cb]' : ''}`}
                                         >
                                             {item.label}
                                         </button>
-                                    ) : (
-                                        <div
-                                            onClick={() => toggleSubmenu(item.id)}
-                                            className={`text-[#222222] duration-300 font-semibold hover:text-[#009444] ${activeMenuItem === item.label ? 'text-[#FEA116]' : ''}`}
-                                        >
-                                            {item.label}
 
-
-                                        </div>
-                                    )}
-                                </li>
-                            ))}
+                                    </li>
+                                ))}
+                            </div>
                         </ul>
+
                         <button className="flex items-center hover:bg-[#009445cb] mt-5 ms-2 font-family font-semibold bg-[#009444] text-white px-4 py-2 sm:px-6 sm:py-3 rounded text-sm sm:text-base duration-300">
                             <span className="font-semibold">Get in touch</span>
                         </button>

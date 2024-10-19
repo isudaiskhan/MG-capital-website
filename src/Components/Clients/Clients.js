@@ -9,9 +9,9 @@ import image6 from '../Assets/client6.png'
 const Clients = () => {
     return (
         <>
-            <div className='bg-[#CCEADA]'>
+            <div className='bg-[#CCEADA] mt-20'>
                 <div className='container mx-auto'>
-                    <div className="flex flex-col items-center justify-between p-16">
+                    <div className="flex flex-col items-center justify-between p-14">
                         <p className="text-2xl font-family font-semibold text-center mb-8">We believe it’s a privilege to serve our clients. We work hard to earn their trust every day by elevating both their spaces and the well-being of those who use them.</p>
 
                         {/* Row of 6 images */}

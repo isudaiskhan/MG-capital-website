@@ -42,10 +42,10 @@ const IndustryPartners = () => {
     };
 
     return (
-        <div className='py-10 mt-14 container mx-auto overflow-hidden'>
+        <div id='industries' className='py-10 px-4 container mx-auto overflow-hidden'>
 
             <div className="mb-10">
-                <h1 className="text-4xl font-family font-bold mb-4">A Trusted Partner Across Every Industry</h1>
+                <h1 className="sm:text-4xl text-3xl font-family mt-14 font-bold mb-4">A Trusted Partner Across Every Industry</h1>
                 <p className="text-xl font-family text-[#404040] max-w-5xl">
                     At MG Capital, we are dedicated to delivering solutions that demonstrate our commitment to health, safety, equity, and performance across a wide range of facilities.
                 </p>
@@ -90,9 +90,9 @@ const IndustryPartners = () => {
                     </div>
 
                     {/* Text below image */}
-                    <div className="flex flex-col justify-center px-6 mt-4">
-                        <h1 className="text-2xl font-bold mb-4">{categories[categoryIndex]}</h1>
-                        <p className="text-lg text-gray-700">
+                    <div className="flex flex-col justify-center mt-4">
+                        <h1 className="text-2xl font-family font-bold mb-4">{categories[categoryIndex]}</h1>
+                        <p className="text-lg text-[#404040]">
                             {categoryIndex === 0 && 'Providing tailored services for commercial office buildings, accommodating diverse tenant needs and security requirements, while ensuring clean, well-maintained workspaces.'}
                             {categoryIndex === 1 && 'MG Capital provides tailored services for educational institutions, focusing on creating conducive learning environments.'}
                             {categoryIndex === 2 && 'MG Capital supports life sciences facilities, ensuring compliance with the highest standards in laboratory settings.'}
@@ -105,7 +105,7 @@ const IndustryPartners = () => {
             </motion.div>
 
             {/* Desktop view: buttons on left, */}
-            <div className="hidden md:grid grid-cols-1 md:grid-cols-4 gap-20 h-full">
+            <div className="hidden md:grid grid-cols-1 md:grid-cols-4 lg:gap-16 gap-4 h-full">
                 {/* Left-side buttons */}
                 <div className="col-span-1 h-full flex">
                     <div className="flex flex-col gap-y-4 w-full justify-between">
@@ -113,7 +113,7 @@ const IndustryPartners = () => {
                             <motion.button
                                 key={cat}
                                 onClick={() => handleCategoryClick(index)}
-                                className={`px-6 py-2 rounded ${categoryIndex === index ? 'bg-[#009444] text-white' : 'bg-[#F5F5F5] text-black'}`}
+                                className={`lg:px-6 lg:py-2 md:px-4 md:py-1.5 px-6 py-2 lg:text-base md:text-sm rounded ${categoryIndex === index ? 'bg-[#009444] text-white' : 'bg-[#F5F5F5] text-black'}`}
                             >
                                 {cat}
                             </motion.button>
@@ -139,7 +139,7 @@ const IndustryPartners = () => {
                         {/* Text below image */}
                         <div className="flex flex-col justify-center mt-4">
                             <h1 className="text-2xl font-family font-bold mb-1">{categories[categoryIndex]}</h1>
-                            <p className="text-lg text-gray-700">
+                            <p className="text-lg text-[#404040]">
                                 {categoryIndex === 0 && 'Providing tailored services for commercial office buildings, accommodating diverse tenant needs and security requirements, while ensuring clean, well-maintained workspaces.'}
                                 {categoryIndex === 1 && 'MG Capital provides tailored services for educational institutions, focusing on creating conducive learning environments.'}
                                 {categoryIndex === 2 && 'MG Capital supports life sciences facilities, ensuring compliance with the highest standards in laboratory settings.'}

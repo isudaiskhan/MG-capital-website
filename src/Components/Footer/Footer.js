@@ -6,15 +6,15 @@ import { FaXTwitter } from 'react-icons/fa6';
 const Footer = () => {
     return (
         <>
-            <div className='container mx-auto px-6'>
-                <footer className="bg-white text-white py-16">
+            <div className='container mx-auto sm:px-4 px-6'>
+                <footer className="bg-white text-white pt-16">
                     <div className="flex flex-col md:flex-row justify-between lg:items-center mb-4">
                         <div className="flex flex-col lg:flex-row justify-between lg:items-center w-full mb-4 md:mb-0">
                             <div className='mb-8'>
                                 <img src={footerlogo} alt="Logo" className="mr-2" />
                             </div>
                             <div className="flex flex-col items-start">
-                                <p className="text-lg text-black">Effortless Property Care, Tailored for You.</p>
+                                <p className="sm:text-lg text-black">Effortless Property Care, Tailored for You.</p>
                                 <button className="bg-[#009444] font-family text-white mt-5 lg:ml-auto py-3 px-3 rounded">
                                     Get in Touch
                                 </button>
@@ -25,14 +25,14 @@ const Footer = () => {
                     <div className="flex flex-col lg:flex-row justify-between lg:items-center mb-4 mt-8 border-b-[1px] border-b-black py-7">
                         <div className="flex flex-col sm:flex-row sm:space-x-10 mb-4 lg:mb-0 text-black">
                             <div className="flex space-x-10 mb-4 sm:mb-0">
-                                <a href="/" className="hover:underline">Home</a>
-                                <a href="/about" className="hover:underline">About us</a>
-                                <a href="/services" className="hover:underline">Services</a>
+                                <div className="cursor-pointer">Home</div>
+                                <div className="cursor-pointer">About us</div>
+                                <div className="cursor-pointer">Services</div>
                             </div>
                             <div className="flex space-x-10">
-                                <a href="/details" className="hover:underline">Industries</a>
-                                <a href="/details" className="hover:underline">People</a>
-                                <a href="/details" className="hover:underline">Careers</a>
+                                <div className="cursor-pointer">Industries</div>
+                                <div className="cursor-pointer">People</div>
+                                <div className="cursor-pointer">Careers</div>
                             </div>
                         </div>
 
@@ -54,8 +54,8 @@ const Footer = () => {
 
                     <div className="flex flex-col lg:flex-row justify-between lg:items-center w-full py-3">
                         <div className='text-black mb-4'>
-                            <a href="/terms" className="hover:underline">Terms of Service</a>
-                            <a href="/privacy" className="ml-8 hover:underline">Privacy Policy</a>
+                            <a>Terms of Service</a>
+                            <a className="ml-8">Privacy Policy</a>
                         </div>
                         <div>
                             <p className="text-sm text-black">Copyright © 2024 MG Capital Maintenance</p>

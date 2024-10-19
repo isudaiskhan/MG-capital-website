@@ -49,13 +49,13 @@ const MakePlaces = () => {
 
 
 
-            <div className="container mx-auto sm:px-5 px-3 py-20 mt-8 overflow-hidden">
+            <div id='peoples' className="container mx-auto px-4 py-8 overflow-hidden">
                 <div className="flex flex-wrap -mx-6">
 
 
                     <div className="w-full lg:w-[55%] lg:px-4 px-5 ">
                         <div className="mb-8 px-3">
-                            <h1 className="text-black flex mt-5 flex-wrap font-family text-3xl sm:text-4xl font-bold">
+                            <h1 className="text-black flex mt-14 flex-wrap font-family text-3xl sm:text-4xl font-bold">
                                 People Make Places
                             </h1>
 

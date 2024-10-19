@@ -30,7 +30,7 @@ const Hero = () => {
             >
                 <div className="absolute inset-0 bg-gradient-to-b from-[#00000000] to-[#FFFFFFB2]"></div>
 
-                <div className="relative w-full overflow-hidden">
+                <div className="relative w-full overflow-hidden sm:px-4">
                     <div className='flex flex-col items-center justify-end overflow-hidden'>
                         <div className='relative w-full py-16 px-4'>
                             <div className='container px-4 mx-auto flex flex-col lg:flex-row'>
@@ -47,7 +47,7 @@ const Hero = () => {
                         </div>
 
                         {/* Images Row */}
-                        <div className="flex justify-end mb-4 px-10 w-full">
+                        <div className="flex justify-end px-10 w-full">
                             <img src={image1} alt="Image 1" className="" />
 
                         </div>

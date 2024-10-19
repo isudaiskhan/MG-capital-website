@@ -40,17 +40,17 @@ const Services = () => {
     ];
 
     return (
-        <section className="py-12">
-            <div className="container mx-auto">
-                <h2 className="text-4xl font-family font-bold mb-4">Services for Every Need</h2>
+        <section id="services" className="py-5 px-4">
+            <div className="container mx-auto p-2">
+                <h2 className="sm:text-4xl text-3xl font-family mt-16 font-bold mb-4">Services for Every Need</h2>
                 <p className="text-xl font-family mb-8 lg:max-w-3xl">
                     No matter the task, our refined systems, proven processes, and advanced tools ensure facilities are cleaner, better, and safer.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="relative group bg-white shadow-lg shadow-[#009444] rounded-lg overflow-hidden"
+                            className="relative group bg-white shadow-lg hover:shadow-[#009444] rounded-lg overflow-hidden"
                         >
                             <img
                                 src={service.image}

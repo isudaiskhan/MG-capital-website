@@ -43,7 +43,7 @@ const Testimonial = () => {
 
     return (
         <>
-            <div className='bg-[#CCEADA]'>
+            <div className='bg-[#CCEADA] mt-16'>
                 <div className="container mx-auto py-16 overflow-hidden">
                     <div className="flex flex-wrap px-2">
                         <div className="w-full px-2 lg:mt-0 mt-4 relative">
@@ -53,10 +53,10 @@ const Testimonial = () => {
                                         <div className="p-4">
                                             <div>
                                                 <FaQuoteLeft className="text-[#009444] text-4xl sm:text-5xl" />
-                                                <p className="text-[#222222] text-center mt-7 text-2xl">
+                                                <p className="text-[#222222] text-center mt-7 font-semibold sm:font-bold font-family text-xl sm:text-2xl">
                                                     As a long-term client of MG Capital, I have been thoroughly impressed with their exceptional service and attention to detail. The team is responsive, professional, and always goes the extra mile.
                                                 </p>
-                                                <h2 className="text-xl font-medium text-center font-family text-[#222222] mt-7">{clientNames[index]}</h2>
+                                                <h2 className="text-xl font-semibold text-center font-family text-[#222222] mt-7">{clientNames[index]}</h2>
                                                 <p className="text-[#222222] text-center mt-1">{professions[index]}</p>
                                             </div>
                                         </div>

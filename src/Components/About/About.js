@@ -103,12 +103,12 @@ const About = () => {
         <>
 
 
-            <div className="container mx-auto sm:px-5 px-3 py-20 mt-8 overflow-hidden">
+            <div id="about" className="container mx-auto px-4 py-10 overflow-hidden">
                 <div className="flex flex-wrap -mx-6">
 
                     <div className="w-full lg:w-[55%] lg:px-4 px-5 ">
                         <div className="mb-8 px-3">
-                            <h1 className="text-black flex mt-5 flex-wrap font-family text-3xl sm:text-4xl font-bold" style={{ lineHeight: isLargeScreen ? '3rem' : '3rem' }}>
+                            <h1 className="text-black flex mt-14 flex-wrap font-family text-3xl sm:text-4xl font-bold" style={{ lineHeight: isLargeScreen ? '3rem' : '2.5rem' }}>
                                 MG Captial is committed to people-first places
                             </h1>
 

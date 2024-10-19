@@ -12,12 +12,12 @@ const HigherStandards = () => {
 
 
 
-            <div className="container mx-auto sm:px-5 px-3 py-20 mt-8 overflow-hidden">
+            <div id='sustainibility' className="container mx-auto px-4 py-20 mt-8 overflow-hidden">
                 <div className="flex flex-wrap -mx-6">
 
 
 
-                    <div className="w-full lg:w-1/2 px-4 mt-3 mb-8 md:mb-0">
+                    <div className="w-full lg:w-1/2 px-4 mb-8 md:mb-0">
                         <div className="p-4 h-full">
                             <div className="h-full">
                                 <img src={image} alt="Image 4" className="h-full w-full rounded-md object-cover" />
@@ -40,7 +40,7 @@ const HigherStandards = () => {
                         </div>
 
 
-                        <div className="flex px-4 mt-8 justify-between flex-wrap items-center mb-8">
+                        <div className="flex px-4 mt-8 gap-6 justify-between flex-wrap items-center mb-8">
                             <img src={image1} alt="Image 1" />
                             <img src={image2} alt="Image 2" />
                             <img src={image3} alt="Image 3" />
