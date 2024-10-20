@@ -1,6 +1,7 @@
 import About from "./Components/About/About";
 import Clients from "./Components/Clients/Clients";
 import Footer from "./Components/Footer/Footer";
+// import GetInTouch from "./Components/GetInTouch/GetInTouch";
 import Hero from "./Components/Hero/Hero";
 import HigherStandards from "./Components/HigherStandards/HigherStandards";
 import IndustryPartners from "./Components/IndustryPartners/IndustryPartners";
@@ -15,6 +16,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      {/* <GetInTouch /> */}
       <About />
       <Services />
       <IndustryPartners />

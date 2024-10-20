@@ -93,11 +93,11 @@ const IndustryPartners = () => {
                         <h1 className="text-2xl font-family font-bold mb-4">{categories[categoryIndex]}</h1>
                         <p className="text-lg text-[#404040]">
                             {categoryIndex === 0 && 'Providing tailored services for commercial office buildings, accommodating diverse tenant needs and security requirements, while ensuring clean, well-maintained workspaces.'}
-                            {categoryIndex === 1 && 'MG Capital provides tailored services for educational institutions, focusing on creating conducive learning environments.'}
-                            {categoryIndex === 2 && 'MG Capital supports life sciences facilities, ensuring compliance with the highest standards in laboratory settings.'}
-                            {categoryIndex === 3 && 'MG Capital specializes in providing solutions for manufacturing facilities, enhancing productivity and efficiency.'}
-                            {categoryIndex === 4 && 'MG Capital provides expert services for industrial sites, ensuring operational excellence and compliance.'}
-                            {categoryIndex === 5 && 'MG Capital offers tailored services for government facilities, prioritizing security and compliance.'}
+                            {categoryIndex === 1 && 'Delivering expert cleaning services for educational institutions, supporting learning environments and addressing the unique needs of students, staff and campus facilities.'}
+                            {categoryIndex === 2 && 'Offering customized cleaning solutions to ensure GMP compliance and inspection readiness. With extensive controlled environment expertise, we are supporting your mission to improve patient and consumer lives.'}
+                            {categoryIndex === 3 && 'Providing tailored cleaning solutions for manufacturing facilities, focusing on maintaining efficient production, safety and compliance to ensure smooth operations.'}
+                            {categoryIndex === 4 && 'Ensuring industrial facilities remain clean, secure and healthy for staff and equipment, using proven systems for efficient operations.'}
+                            {categoryIndex === 5 && 'Delivering adaptable cleaning services for government facilities, meeting distinct needs while ensuring compliance in critical spaces and maintaining confidentiality.'}
                         </p>
                     </div>
                 </div>
@@ -138,11 +138,11 @@ const IndustryPartners = () => {
                             <h1 className="text-2xl font-family font-bold mb-1">{categories[categoryIndex]}</h1>
                             <p className="text-lg text-[#404040]">
                                 {categoryIndex === 0 && 'Providing tailored services for commercial office buildings, accommodating diverse tenant needs and security requirements, while ensuring clean, well-maintained workspaces.'}
-                                {categoryIndex === 1 && 'MG Capital provides tailored services for educational institutions, focusing on creating conducive learning environments.'}
-                                {categoryIndex === 2 && 'MG Capital supports life sciences facilities, ensuring compliance with the highest standards in laboratory settings.'}
-                                {categoryIndex === 3 && 'MG Capital specializes in providing solutions for manufacturing facilities, enhancing productivity and efficiency.'}
-                                {categoryIndex === 4 && 'MG Capital provides expert services for industrial sites, ensuring operational excellence and compliance.'}
-                                {categoryIndex === 5 && 'MG Capital offers tailored services for government facilities, prioritizing security and compliance.'}
+                                {categoryIndex === 1 && 'Delivering expert cleaning services for educational institutions, supporting learning environments and addressing the unique needs of students, staff and campus facilities.'}
+                                {categoryIndex === 2 && 'Offering customized cleaning solutions to ensure GMP compliance and inspection readiness. With extensive controlled environment expertise, we are supporting your mission to improve patient and consumer lives.'}
+                                {categoryIndex === 3 && 'Providing tailored cleaning solutions for manufacturing facilities, focusing on maintaining efficient production, safety and compliance to ensure smooth operations.'}
+                                {categoryIndex === 4 && 'Ensuring industrial facilities remain clean, secure and healthy for staff and equipment, using proven systems for efficient operations.'}
+                                {categoryIndex === 5 && 'Delivering adaptable cleaning services for government facilities, meeting distinct needs while ensuring compliance in critical spaces and maintaining confidentiality.'}
                             </p>
                         </div>
                     </div>

@@ -8,9 +8,9 @@ import { FaQuoteLeft } from "react-icons/fa";
 const Testimonial = () => {
     const sliderRef = useRef();
 
-    const clientNames = ["Sarah Mitchell", "Sarah Mitchell", "Sarah Mitchell", "Sarah Mitchell"];
-    const professions = ["Operations Manager, Sterling Real Estate", "Operations Manager, Sterling Real Estate", "Operations Manager, Sterling Real Estate", "Operations Manager, Sterling Real Estate"];
-
+    const clientNames = ["Sarah Mitchell", "Sarah Mitchell",];
+    const professions = ["Operations Manager, Sterling Real Estate", "Operations Manager, Sterling Real Estate",];
+    const description = ["As a long-term client of MG Capital, I have been thoroughly impressed with their exceptional service and attention to detail. The team is responsive, professional, and always goes the extra mile.", "Working with MG Capital has been a game-changer for our investment strategy. Their dedication and expertise have significantly contributed to our success."]
     const settings = {
         infinite: true,
         speed: 500,
@@ -54,7 +54,7 @@ const Testimonial = () => {
                                             <div>
                                                 <FaQuoteLeft className="text-[#009444] text-4xl sm:text-5xl" />
                                                 <p className="text-[#222222] text-center mt-7 font-semibold sm:font-bold font-family text-xl sm:text-2xl">
-                                                    As a long-term client of MG Capital, I have been thoroughly impressed with their exceptional service and attention to detail. The team is responsive, professional, and always goes the extra mile.
+                                                    {description[index]}
                                                 </p>
                                                 <h2 className="text-xl font-semibold text-center font-family text-[#222222] mt-7">{clientNames[index]}</h2>
                                                 <p className="text-[#222222] text-center mt-1">{professions[index]}</p>
